@@ -26,6 +26,16 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
+  background-image: url(images/body1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 700px;
+  min-height: 650px;
+  height: 700px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
     line-height: 1;
 }
 ol, ul {
@@ -136,22 +146,6 @@ table {
 
 .textcenter {
     text-align: center;
-}
-
-video { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    background: url('') no-repeat;
-    background-size: cover;
-    transition: 1s opacity;
-
 }
 
 
