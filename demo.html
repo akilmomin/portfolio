@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Akil Momin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+
+
+<div class="Container">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#about">ABOUT</a>
+    <a href="#skills">PORTFOLIO</a>
+    <a href="#project-info">PROJECTS</a>
+    <a href="#contact-info">CONTACT</a>
+</div>
+
+
+<div class="topnav">
+<div class="row">
+    <div class="logo col-sm-6">
+       <a href="#profile"><img src="images/logo1.png"></a>
+    </div>
+    <div class="col-sm-6">
+    <a href="#home"><span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; </span></a>
+    </div>
+</div>
+</div>
+<video autoplay  poster="" id="bgvid" loop>
+         <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+        <source src="images/snow.webm" type="video/webm">
+        <source src="images/snow.mp4" type="video/mp4">
+</video>
+
+<div id="about" class="container-fluid">
+
+  <div class="row">
+      <div class="col-sm-2">
+      </div>
+
+      <div class="col-sm-8 about-info">
+        <h1 class="textcenter">ABOUT ME </h1>
+        <div class="about" id="about">
+            <div class="pic">
+              <img src="images/akil.jpg"> 
+              <h2>HOWDY!</h2>
+              <h3>My Name is <strong>Akil Momin</strong></h3>
+              <h3> I'm a Web Developer, painter, and adventurer. <br>I'm curently studying at Blinn College. 
+              </h3>
+            </div> 
+
+        </div>
+      </div>
+
+
+      <div class="col-sm-2">     
+      </div>
+
+  </div>    
+</div>
+
+
+<!-- Container (portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center">
+    <h1 class="textcenter">PORTFOLIO</h1>
+</div>
+
+<div id="portfolio-info" class="container-fluid">
+  <div class="slideanim">
+
+    <div class="skills" id="skills">
+        <h2 class="textcenter">SKILLS</h2>
+
+        <br><br><br>
+        <div id="myProgress">
+        <p class="percentage">80%</p>
+        <div id="myBarHtml"><p class="barName">HTML</p></div>
+        </div>
+        <br>
+        <div id="myProgress">
+        <p class="percentage">70%</p>
+        <div id="myBarCss"><p class="barName">CSS</p></div>
+        </div>
+
+        <br>
+        <div id="myProgress">
+        <p class="percentage">40%</p>
+        <div id="myBarJavascript"><p class="barName">JavaScript</p></div>
+        </div>
+
+        <br>
+        <div id="myProgress">
+        <p class="percentage">46%</p>
+        <div id="myBarPHP"><p class="barName">PHP</p></div>
+        </div>
+
+        <br>
+        <div id="myProgress">
+        <p class="percentage">18%</p>
+        <div id="myBarMySQL"><p class="barName">MySQL</p></div>
+        </div>
+
+        <br>
+        <div id="myProgress">
+        <p class="percentage">30%</p>
+        <div id="myBarPython"><p class="barName">Python</p></div>
+        </div>
+
+        <br><br><br>
+
+    </div>
+  </div>
+</div>
+<!-- Container (Portfolio Section) -->
+<div id="projects" class="container-fluid text-center bg-grey">
+<div class="row">
+  <h1 class="textcenter">PROJECTS</h1><br>
+</div>
+
+<div id="project-info" class="container-fluid">
+  <h3 class="textcenter">Check out my projects</h3> <br> <br>
+    
+            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/paint2.jpg" alt="">
+                <div class="overlay">
+                   <h2>LIMO</h2>
+                   
+                </div>
+
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/paint3.jpg" alt="">
+                <div class="overlay">
+                   <h2>BUS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="images/paint1.jpg" alt="">
+                <div class="overlay">
+                   <h2> AVALANCHE</h2>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+<h1 class="text-center">CONTACT</h1>
+</div>
+<div id="contact-info" class="container-fluid">    
+  <div class="row">
+      <div class="col-sm-6 info">
+        <p><span class="glyphicon glyphicon-map-marker"></span> College station, TX</p>
+        <p><span class="glyphicon glyphicon-phone"></span> 979 250 2276</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> akilmomin92@gmail.com</p>     
+      </div>
+      <div class="col-sm-6 form-info slideanim">
+          <div class="row">
+            <div class="col-sm-12 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <br>
+            <div class="col-sm-12 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+            <br>
+            <div class="col-sm-12 form-group">
+            <input class="form-control" id="number" name="phone number" placeholder="Phone-number" type="tel" required>
+            </div>
+            <br>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+            <div class="col-sm-12 form-group">
+            <button class="btn btn-success btn-block pull-right" type="submit">Send</button>
+            </div>
+          </div>  
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+  <a href="#about" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p class="copy"> &copy  Akil Momin</p>
+    
+    <br>
+    <div class="footer_link">
+      <a href="https://www.facebook.com/akil.prasla" target="new"><img src="images/facebook3.png" ></a>
+      <a href="https://github.com/Akilmomin" target="new"><img src="images/github.png" ></a>
+      <a href="https://www.linkedin.com/in/akil-momin-25477b113
+      " target="new"><img src="images/linkedin.png" ></a>
+      <a href="mailto:akil.momin92@yahoo.com?sunject=Leave%20a%20Message"><img src="images/mail.png"></a>
+</div>
+    
+</footer>
+</div>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "350px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+</body>
+</html> 
