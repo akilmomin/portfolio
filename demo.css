@@ -246,7 +246,7 @@ strong {
 /* portfoli0 style */
 #portfolio {
  background-image: url(images/portfolio.jpg);
-  background-attachment: fixed;
+ background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 700px;
@@ -377,7 +377,8 @@ strong {
     height: auto;
     
 }
-#project-info h3 {
+#project-info h2 {
+    padding: 10%;
     color: #ff6666;
 }
 
