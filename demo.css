@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-  background-image: url(images/body1.jpg);
+  background-image: url(images/profile1.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,8 +79,8 @@ table {
     text-align: center;
 }
 
-.sidenav a:hover {
-    color: red;
+.sidenav .nav a:hover {
+    color: #666;
     font-size: 3.1em;
     font-weight: bold;
 }
@@ -93,7 +93,7 @@ table {
     margin-left: 50px;
     padding: 10px;
     margin-bottom: 20px;
-    font-size: 2.9em;
+    font-size: 3.9em;
     padding-top: 10px;
 }
 
@@ -105,6 +105,9 @@ table {
 .closebtn:hover {
   color: red;
   font-size: 4.2em !important;
+  -ms-transform: rotate(47deg); 
+    -webkit-transform: rotate(47deg); 
+    transform: rotate(47deg);
 }
 
 .topnav {
@@ -122,25 +125,25 @@ table {
     overflow-x: hidden;
     transition: 0.5s;
 }
-
+.topnav h2 {
+  font-family: 'Freckle Face', cursive;
+  position: absolute;
+  color: red;
+  padding: 10px 0 0 25px;
+  font-size: 2.6em;
+}
 .topnav a {
   display: block;
   color: #f2f2f2;
   text-align: center;
   text-decoration: none;
-  padding-top: 10px;
 }
 .topnav span {
-    padding-right: 20px;
-    padding-top: 10px;
+    margin-right: 3%;
+    padding: 10px;
     float: right;
 }
 .logo {
-    float: left;
-}
-.logo img {
-    width: 200px;
-    height: 70px;
     float: left;
 }
 
@@ -164,6 +167,7 @@ table {
   padding-bottom: 10%;
   height: auto;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .about p {
   font-size: 1.2em;
@@ -192,28 +196,28 @@ table {
   color: red;
 }
 #about{
-
+  background-color: rgba(0, 0, 0, 0.9);
   height: auto;
   color: black;
-  margin-top: 10%;
+
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)); 
 
 }
 .about-info {
-  background-color: rgba(153, 204, 255, 0.4);
-  padding: 5%;
-padding-right: 5%;
-padding-left: 5%;
+  margin-top: 25%;
+  color: white;
+  height: 700px;
 
-
-box-shadow:10px 10px 20px #0066cc;
--webkit-box-shadow:10px 10px 20px #0066cc;
--moz-box-shadow: 10px 10px 20px #0066cc;
 }
 
 #about h1 {
     font-size: 2.3em;
     font-weight: bolder;
     letter-spacing: 7px;
+    padding-top: 5%;
 }
 #about p {
     font-size: 1.0em;
@@ -263,9 +267,9 @@ strong {
   letter-spacing: 7px;
   padding-top: 22%; 
   padding-bottom: 22%; 
+  font-weight: bolder;
 }
 #portfolio-info h2 {
-    color: #ff0000;
     font-size: 2.4em;
 }
 
@@ -352,7 +356,7 @@ strong {
 
 /* porject */
 #projects {
-  background-image: url(images/base.jpg);
+  background-image: url(images/project.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -369,6 +373,7 @@ strong {
   letter-spacing: 7px;
   padding-top: 22%; 
   padding-bottom: 22%;  
+  font-weight: bolder;
 }
 
 #project-info {
@@ -379,7 +384,6 @@ strong {
 }
 #project-info h2 {
     padding: 10%;
-    color: #ff6666;
 }
 
 /* project style and effects */
@@ -554,7 +558,7 @@ img {
 }
 
 #contact {
-  background-image: url(images/contact3.jpg);
+  background-image: url(images/contact.jpeg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -569,7 +573,8 @@ img {
   color: white;
   letter-spacing: 7px;
   padding-top: 22%; 
-  padding-bottom: 22%; 
+  padding-bottom: 22%;
+  font-weight: bolder; 
 }
 #contact-info {
     background-color: #cccccc;
@@ -577,14 +582,28 @@ img {
     width: 100%;
     height: auto;
 }
+
 #contact-info span {
     color: black;
 }
+#contact-info h2 {
+  padding: 2%;
+}
 .info {
+    padding-top: 5%;
     padding-left: 5%;
     font-size: 1.5em;
 }
-
+.info span {
+  padding: 20px;
+}
+.form-info {
+  padding-top: 5%;
+}
+.form-info button {
+  background-color: #666;
+  color: #fff;
+}
 /* footer style */
 footer {
     background-color: #eee;

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Fontdiner+Swanky|Freckle+Face|Shrikhand|Sigmar+One" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="demo.css">
   <link rel="stylesheet" type="text/css" href="component.css" />
 </head>
@@ -16,17 +17,19 @@
 <div class="Container">
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="nav">
     <a href="#about">ABOUT</a>
     <a href="#skills">PORTFOLIO</a>
     <a href="#project-info">PROJECTS</a>
     <a href="#contact-info">CONTACT</a>
+    </div>
 </div>
 
 
 <div class="topnav">
 <div class="row">
     <div class="logo col-sm-6">
-       <a href="#about"><img src="images/logo1.png"></a>
+    <a href=""><h2>AM</h2></a>
     </div>
     <div class="col-sm-6">
     <a href="#home"><span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; </span></a>
@@ -37,25 +40,17 @@
 <div id="about" class="container-fluid">
 
   <div class="row">
-      <div class="col-sm-2">
-      </div>
 
-      <div class="col-sm-8 about-info slideanim">
-        <h1 class="textcenter">ABOUT ME </h1>
-        <div class="about" id="about">
-            <div class="pic">
-              <img src="images/akil.jpg"> 
-              <h2>HOWDY!</h2>
-              <h3>My Name is <strong>Akil Momin</strong></h3>
-              <h3> I'm a Web Developer, painter, and adventurer. <br>I'm curently studying at Blinn College. 
-              </h3>
-            </div> 
-
-        </div>
+      <div class="col-sm-6 about-info slideanim">
+              <h1>HOWDY!</h1>
+              <h1>My Name is <strong>Akil Momin</strong></h1>
+              <h1> I'm a Web Developer, painter, and adventurer. <br>I'm curently studying at Blinn College. 
+              </h1>
+  
       </div>
 
 
-      <div class="col-sm-2">     
+      <div class="col-sm-6">     
       </div>
 
   </div>    
@@ -69,7 +64,7 @@
 
 <div id="portfolio-info" class="container-fluid">
 
-    <div class="skills" id="skills">
+    <div class="skills slideanim" id="skills">
         <h2 class="textcenter">SKILLS</h2>
 
         <div id="codeconSkills">
@@ -128,7 +123,6 @@
 </div>
 <!-- Container (Portfolio Section) -->
 <div id="projects" class="container-fluid">
-<div>
   <h1 class="textcenter slideanim">PROJECTS</h1><br>
 </div>
 
@@ -137,7 +131,7 @@
      <div class="slideanim">
       <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
           <div class="hovereffect">
-                <img class="img-responsive" src="images/paint2.jpg" alt="">
+                <img class="img-responsive" src="images/stock.jpeg" alt="">
                 <div class="overlay">
                    <h2>finance-tracker</h2>
                    
@@ -147,7 +141,7 @@
             </div>
        <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
           <div class="hovereffect">
-                <img class="img-responsive" src="images/paint3.jpg" alt="">
+                <img class="img-responsive" src="images/logo2.jpg" alt="">
                 <div class="overlay">
                    <h2>black daimond</h2>
                 </div>
@@ -155,7 +149,7 @@
         </div>
         <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
             <div class="hovereffect">
-                <img class="img-responsive" src="images/paint1.jpg" alt="">
+                <img class="img-responsive" src="images/techsupport.jpg" alt="">
                 <div class="overlay">
                    <h2> tech support</h2>
                 </div>
@@ -170,14 +164,15 @@
 <div id="contact" class="container-fluid bg-grey">
 <h1 class="text-center slideanim">CONTACT</h1>
 </div>
-<div id="contact-info" class="container-fluid slideanim">    
+<div id="contact-info" class="container-fluid ">    
   <div class="row">
-      <div class="col-sm-6 info">
+    <h2 class="textcenter">leave a message!</h2>
+      <div class="col-sm-6 info slideanim ">
         <p><span class="glyphicon glyphicon-map-marker"></span> College station, TX</p>
         <p><span class="glyphicon glyphicon-phone"></span> 979 250 2276</p>
         <p><span class="glyphicon glyphicon-envelope"></span> akilmomin92@gmail.com</p>     
       </div>
-      <div class="col-sm-6 form-info ">
+      <div class="col-sm-6 form-info slideanim ">
           <div class="row">
             <div class="col-sm-12 form-group">
             <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -195,7 +190,7 @@
             <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
             <div class="row">
             <div class="col-sm-12 form-group">
-            <button class="btn btn-success btn-block pull-right" type="submit">Send</button>
+            <button class="btn btn-block pull-right" type="submit">Send</button>
             </div>
           </div>  
     </div>
@@ -260,7 +255,7 @@ $(document).ready(function(){
 
 <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "350px";
+    document.getElementById("mySidenav").style.width = "400px";
 }
 
 function closeNav() {

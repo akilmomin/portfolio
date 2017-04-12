@@ -29,7 +29,7 @@
     -o-animation: Animate-HTML 7s;
     height: 30px;
     position: absolute;
-    background-color: #ea8564;
+    background-color: #404040;
     border-radius: 15px;
 }
 @keyframes Animate-HTML {
@@ -65,7 +65,7 @@ to {
     width: 70%;
     height: 30px;
     position: absolute;
-    background-color: #55a69f;
+    background-color: #404040;
     border-radius: 15px;
 }
 @keyframes Animate-CSS {
@@ -101,7 +101,7 @@ to {
     width: 40%;
     height: 30px;
     position: absolute;
-    background-color: #99856d;
+    background-color: #404040;
     border-radius: 15px;
 }
 @keyframes Animate-jQuery {
@@ -137,7 +137,7 @@ to {
     width: 50%;
     height: 30px;
     position: absolute;
-    background-color: #c44e45;
+    background-color: #404040;
     border-radius: 15px;
 }
 @keyframes Animate-JS {
@@ -174,7 +174,7 @@ to {
     width: 30%;
     height: 30px;
     position: absolute;
-    background-color: #970cc1;
+    background-color: #404040;
     border-radius: 15px;
 }
 @keyframes Animate-C {
@@ -211,7 +211,7 @@ to {
     width: 50%;
     height: 30px;
     position: absolute;
-    background-color: #5A69A6;
+    background-color: #404040;
     border-radius: 15px;
 }
 @keyframes Animate-PHP {
@@ -247,7 +247,7 @@ to {
     width: 80%;
     height: 30px;
     position: absolute;
-    background-color: #23b1db;
+    background-color: #404040;
     border-radius: 15px;
 }
 @keyframes Animate-SQL {
@@ -289,7 +289,6 @@ to {
 }
 .PercentText {
     z-index: 3;
-    position: relative;
     padding-right: 15px;
     margin-top: 7px;
     float: right;
