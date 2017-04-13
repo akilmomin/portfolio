@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-  background-image: url(images/profile1.jpg);
+  background-image: url(images/profile.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -62,10 +62,17 @@ table {
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 220px;
+    background-color: rgba(0, 0, 0, 0.9);
+
+
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,1)); 
+
 }
 
 .sidenav a {
@@ -80,7 +87,7 @@ table {
 }
 
 .sidenav .nav a:hover {
-    color: #666;
+    color: #ccffdd;
     font-size: 3.1em;
     font-weight: bold;
 }
@@ -91,10 +98,10 @@ table {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-    padding: 10px;
+    padding: 1px;
     margin-bottom: 20px;
     font-size: 3.9em;
-    padding-top: 10px;
+    padding-top: 7px;
 }
 
 @media screen and (max-height: 450px) {
@@ -139,10 +146,11 @@ table {
   text-decoration: none;
 }
 .topnav span {
-    margin-right: 3%;
+    margin-left: 3%;
     padding: 10px;
-    float: right;
-}
+    float: left;
+  }
+
 .logo {
     float: left;
 }
@@ -356,7 +364,7 @@ strong {
 
 /* porject */
 #projects {
-  background-image: url(images/project.jpg);
+  background-image: url(images/project1.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
