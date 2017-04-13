@@ -28,11 +28,12 @@
 
 <div class="topnav">
 <div class="row">
+    
+    <div class="col-sm-6">
+    <a href="#home"><span style="font-size:40px;cursor:pointer" value=" Open Curtain" onclick="openNav()">&#9776; </span></a>
+    </div>
     <div class="logo col-sm-6">
     <a href=""><h2>AM</h2></a>
-    </div>
-    <div class="col-sm-6">
-    <a href="#home"><span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; </span></a>
     </div>
 </div>
 </div>
@@ -64,7 +65,7 @@
 
 <div id="portfolio-info" class="container-fluid">
 
-    <div class="skills slideanim" id="skills">
+    <div class="skills " id="skills">
         <h2 class="textcenter">SKILLS</h2>
 
         <div id="codeconSkills">
@@ -141,18 +142,22 @@
             </div>
        <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
           <div class="hovereffect">
+              <a href="http://akilmomin.github.io/blackdiamond/business.html" target="new">
                 <img class="img-responsive" src="images/logo2.jpg" alt="">
                 <div class="overlay">
                    <h2>black daimond</h2>
                 </div>
+              </a>
             </div>
         </div>
         <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
             <div class="hovereffect">
+              <a href="https://akilmomin.github.io/techsupport/naju.html" target="new">
                 <img class="img-responsive" src="images/techsupport.jpg" alt="">
                 <div class="overlay">
                    <h2> tech support</h2>
                 </div>
+              </a>
             </div>
         </div>
       </div>
@@ -255,12 +260,24 @@ $(document).ready(function(){
 
 <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "400px";
+  document.getElementById("mySidenav").style.width = "400px";
+  
+  //  var x = document.getElementById('mySidenav');
+  //  if (x.style.display == 'none') {
+  //      x.style.display = 'block';
+  //  } else {
+   //     x.style.display = 'none';
+   // }
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+
+</script>
+
+
 </script>
      
 </body>
