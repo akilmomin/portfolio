@@ -111,7 +111,6 @@ table {
 
 .closebtn:hover {
   color: red;
-  font-size: 4.2em !important;
   -ms-transform: rotate(47deg); 
     -webkit-transform: rotate(47deg); 
     transform: rotate(47deg);
@@ -629,4 +628,5 @@ footer .footer_link img {
   padding: 0.6%;
   float: none;
 }
+
 
