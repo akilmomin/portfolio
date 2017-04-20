@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="demo.css">
   <link rel="stylesheet" type="text/css" href="component.css" />
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".sidenav" data-offset="50">
 
 
 <div class="Container">
@@ -33,7 +33,7 @@
     <a href="#home"><span style="font-size:40px;cursor:pointer" value=" Open Curtain" onclick="openNav()">&#9776; </span></a>
     </div>
     <div class="logo col-sm-6">
-    <a href=""><h2>AM</h2></a>
+    <a href="#myPage"><h2>AM</h2></a>
     </div>
 </div>
 </div>
@@ -46,6 +46,9 @@
               <h1>HOWDY!</h1>
               <h1>My Name is <strong>Akil Momin</strong></h1>
               <h1> I'm a Web Developer, painter, and adventurer. <br>I'm curently studying at Blinn College. 
+              I'm a Web Developer, painter, and adventurer. <br>I'm curently studying at Blinn College. 
+
+
               </h1>
   
       </div>
@@ -129,7 +132,7 @@
 
 <div id="project-info" class="container-fluid">
   <h2 class="textcenter">Check out my projects</h2> <br> <br>
-     <div class="slideanim">
+     <div>
       <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
           <div class="hovereffect">
                 <img class="img-responsive" src="images/stock.jpeg" alt="">
@@ -205,7 +208,7 @@
 
 
 <footer class="container-fluid text-center">
-  <a href="#about" title="To Top">
+  <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
   <p class="copy"> &copy  Akil Momin</p>
@@ -262,10 +265,10 @@ $(document).ready(function(){
 function openNav() {
   document.getElementById("mySidenav").style.width = "400px";
   
-  //  var x = document.getElementById('mySidenav');
-  //  if (x.style.display == 'none') {
-  //      x.style.display = 'block';
-  //  } else {
+   // var x = document.getElementById('mySidenav');
+   // if (x.style.display == 'none') {
+   //     x.style.display = 'block';
+   // } else {
    //     x.style.display = 'none';
    // }
 }
@@ -277,8 +280,5 @@ function closeNav() {
 
 </script>
 
-
-</script>
-     
 </body>
 </html> 
