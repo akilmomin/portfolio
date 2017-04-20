@@ -174,14 +174,13 @@
 </div>
 <div id="contact-info" class="container-fluid ">    
   <div class="row">
-    <h2 class="textcenter">leave a message!</h2>
-      <div class="col-sm-6 info slideanim ">
-        <p><span class="glyphicon glyphicon-map-marker"></span> College station, TX</p>
-        <p><span class="glyphicon glyphicon-phone"></span> 979 250 2276</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> akilmomin92@gmail.com</p>     
+      <div class="col-md-6 map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.2736379033972!2d-96.32044278538382!3d30.598044099163545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864684817f6379ff%3A0xdb5fe462a0f91cf1!2sSouthwest+Pkwy%2C+College+Station%2C+TX+77840!5e0!3m2!1sen!2sus!4v1492729049816" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
-      <div class="col-sm-6 form-info slideanim ">
+      <div class="col-md-6 form-info  ">
           <div class="row">
+
+            <h2 class="textcenter">leave a message!</h2>
             <div class="col-sm-12 form-group">
             <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
             </div>
@@ -265,10 +264,10 @@ $(document).ready(function(){
 function openNav() {
   document.getElementById("mySidenav").style.width = "400px";
   
-   // var x = document.getElementById('mySidenav');
-   // if (x.style.display == 'none') {
-   //     x.style.display = 'block';
-   // } else {
+  //  var x = document.getElementById('mySidenav');
+  //  if (x.style.display == 'none') {
+  //      x.style.display = 'block';
+  //  } else {
    //     x.style.display = 'none';
    // }
 }
@@ -276,9 +275,21 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-
-
 </script>
+<script>
+  $(window).scroll(function () {
+    $('.codeconSkills').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
 
+        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+            $(this).addClass("slideRight");
+        } else {
+            $(this).removeClass("slideRight");
+        }
+    });
+});
+</script>
 </body>
 </html> 
