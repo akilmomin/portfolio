@@ -30,9 +30,9 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 700px;
+  background-size: 100% 1000px;
   min-height: 650px;
-  height: 700px;
+  height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -260,9 +260,9 @@ strong {
  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 700px;
+  background-size: 100% 1000px;
   min-height: 650px;
-  height: 700px;
+  height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -367,9 +367,9 @@ strong {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 700px;
+  background-size: 100% 1000px;
   min-height: 650px;
-  height: 700px;
+  height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -569,9 +569,9 @@ img {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 700px;
+  background-size: 100% 1000px;
   min-height: 650px;
-  height: 700px;
+  height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px; 
