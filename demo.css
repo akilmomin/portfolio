@@ -170,6 +170,7 @@ table {
 }
 .about {
   width: 100%;
+  height: auto;
   margin-top: 350px;
   padding-bottom: 10%;
   height: auto;
@@ -216,7 +217,7 @@ table {
 .about-info {
   margin-top: 15%;
   color: white;
-  height: 700px;
+  height: auto;
 
 }
 
@@ -629,4 +630,5 @@ footer .footer_link img {
     height: 100%;
   height:calc(100% - 0px);
 }
+
 
