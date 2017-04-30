@@ -1,0 +1,24 @@
+1. Create a view in the test database to make it easier to generate a recurring report.
+
+2. Write a view named low_sales which lists the salesmen, their regions, and their sales from lowest to highest, who had less than $12000 in sales. Remember, a saleman's sales is an aggregation of transactions.
+
+3. Copy the statements and their returns to an ASCII text file named Lab8 and attach the file.
+
+
+CREATE VIEW low_sales AS
+
+SELECT sman_fname AS name, region, SUM(sales) AS total
+FROM sales JOIN salesman USING(salesman_id)
+GROUP BY name, region HAVING total < 12000 ORDER BY total;
+
+
+SELECT * FROM low_sales;
++------+--------+----------+
+| name | region | total    |
++------+--------+----------+
+| rick | north  | 10064.00 |
+| barb | north  | 11850.00 |
++------+--------+----------+
+2 rows in set (0.02 sec)
+
+/* i got different result since i have different data entered *?
