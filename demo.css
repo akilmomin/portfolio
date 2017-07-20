@@ -207,22 +207,27 @@ table {
 }
 #about{
   background-color: rgba(0, 0, 0, 0.9);
-  height: auto;
+  height: 100%;
   color: black;
 
   background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)); 
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,1.5)); 
 
 }
 .about-info {
   margin-top: 15%;
   color: white;
-  height: auto;
+  height: 100px;
 
 }
-
+#about img {
+	width: 40%;
+	height: 50%;
+	margin-left: 20%;
+  padding-top: 7%;
+}
 #about h1 {
     font-size: 2.3em;
     font-weight: bolder;
@@ -298,71 +303,105 @@ strong {
   font-size: 5.5em;
 }
 
- #myProgress {
-  
-  width: 80%;
-  margin-left: 10%;
-  height: 30px;
-  background-color: #ddd;
-  border-radius: 4px;
+
+
+/* ******************************************************
+   Skills Bar
+*********************************************************/
+
+#codeconSkills {
+    font-size: 20px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px;
+    width: 85%;
+    border-radius: 15px;
 }
 
-#myBarHtml {
-  
-  width: 80%;
-  height: 100%;
-  background-color: #737373;
-  border-radius: 4px;
+.codeconSkillbar {
+    width: 90%;
+    height: 30px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto;
+    border-radius: 15px;
 }
-#myBarCss {
- 
-  width: 70%;
-  height: 100%;
-  background-color: #737373;
-  border-radius: 4px;
+#codeconHTML {
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    background-color: #404040;
+    border-radius: 15px;
 }
-#myBarJavascript {
-
-  width: 40%;
-  height: 100%;
-  background-color: #737373;
-  border-radius: 4px;
+#codeconCSS {
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    background-color: #404040;
+    border-radius: 15px;
 }
-#myBarPython {
-
-  width: 30%;
-  height: 100%;
-  background-color: #737373;
-  border-radius: 4px;
+#codeconjQuery {
+    width: 40%;
+    height: 30px;
+    position: absolute;
+    background-color: #404040;
+    border-radius: 15px;
 }
-#myBarPHP {
- 
-  width: 46%;
-  height: 100%;
-  background-color: #737373;
-  border-radius: 4px;
-}
-#myBarMySQL {
-  
-  width: 18%;
-  height: 100%;
-  background-color: #737373;
-  border-radius: 4px;
+#codeconJS {
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    background-color: #404040;
+    border-radius: 15px;
 }
 
-.percentage {
-  margin: 5px;
-  float: right;
-  padding-right: 10px;
+
+#codeconC {
+    width: 30%;
+    height: 30px;
+    position: absolute;
+    background-color: #404040;
+    border-radius: 15px;
 }
 
-.barName {
-  margin: 5px;
-  font-size: 1.7em;
-  font-size: bold;
-  letter-spacing: 7px;
-  padding-left: 10px;
+#codeconPHP {
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    background-color: #404040;
+    border-radius: 15px;
 }
+
+#codeconSQL {
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    background-color: #404040;
+    border-radius: 15px;
+}
+
+.codeconSkillArea {
+    z-index: 1;
+    float: left;
+    //position: absolute;
+    margin-top: 7px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+    //font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
+.PercentText {
+    z-index: 3;
+    padding-right: 15px;
+    margin-top: 7px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    //font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
+
 
 /* porject */
 #projects {

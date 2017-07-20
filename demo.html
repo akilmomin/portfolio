@@ -9,7 +9,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Fontdiner+Swanky|Freckle+Face|Shrikhand|Sigmar+One" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="demo.css">
-  <link rel="stylesheet" type="text/css" href="component.css" />
 </head>
 <body id="myPage" data-spy="scroll" data-target=".sidenav" data-offset="50">
 
@@ -42,22 +41,17 @@
 <div id="about" class="container-fluid">
 
   <div class="row">
-
-      <div class="col-sm-6 about-info slideanim">
+     
+      <div class="col-sm-6 about-info ">
               <h1>HOWDY!</h1>
               <h1>My Name is <strong>Akil Momin</strong></h1>
               <h1> I'm a Web Developer, painter, and adventurer. <br>I'm curently studying at Blinn College. 
               I'm a Web Developer, painter, and adventurer. <br>I'm curently studying at Blinn College. 
-
-
               </h1>
-  
       </div>
-
-
-      <div class="col-sm-6">     
+       <div class="col-sm-6 slideanim">  
+      <img src="images/akil12.png">  
       </div>
-
   </div>    
 </div>
 
@@ -277,20 +271,6 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-<script>
-  $(window).scroll(function () {
-    $('.codeconSkills').each(function () {
-        var imagePos = $(this).offset().top;
-        var imageHeight = $(this).height();
-        var topOfWindow = $(window).scrollTop();
 
-        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-            $(this).addClass("slideRight");
-        } else {
-            $(this).removeClass("slideRight");
-        }
-    });
-});
-</script>
 </body>
 </html> 
