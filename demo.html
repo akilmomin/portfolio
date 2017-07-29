@@ -8,8 +8,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Fontdiner+Swanky|Freckle+Face|Shrikhand|Sigmar+One" rel="stylesheet">
+<<<<<<< HEAD:index.html
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="component.css" />
+=======
+  <link rel="stylesheet" type="text/css" href="demo.css">
+>>>>>>> origin/gh-pages:demo.html
 </head>
 <body id="myPage" data-spy="scroll" data-target=".sidenav" data-offset="50">
 
@@ -34,15 +38,27 @@
     <td><a href="#home"><span style="font-size:40px;cursor:pointer" value=" Open Curtain" onclick="openNav()">&#9776; </span></a></td>
     <td width="27%" align="left" valign="middle"><a href="#about"><img src="images/logo.png" alt="logo" border="0" /></a></td>
     
+<<<<<<< HEAD:index.html
   </tr>
   </table>
   </form>
 
+=======
+    <div class="col-sm-4">
+    <a href="#home"><span style="font-size:40px;cursor:pointer" value=" Open Curtain" onclick="openNav()">&#9776; </span></a>
+    </div>
+    <div class="col-sm-4"></div>
+    <div class="logo col-sm-4">
+    <a href="#myPage"><img src="images/logo.png"></a>
+    </div>
+</div>
+>>>>>>> origin/gh-pages:demo.html
 </div>
 
 <div id="about" class="container-fluid">
 
   <div class="row">
+<<<<<<< HEAD:index.html
 
       <div class="col-sm-6 about-info">
               <h1>HOWDY!</h1><h1> I'm Akil Momin </h1><br>
@@ -56,8 +72,19 @@
 
       <div class="col-sm-4 slideanim">  
       <img src="images/akil12.png">   
+=======
+     
+      <div class="col-sm-6 about-info ">
+              <h1>HOWDY!</h1>
+              <h1>My Name is <strong>Akil Momin</strong></h1>
+              <h1> I'm a Web Developer, painter, and adventurer. <br>I'm curently studying at Blinn College. 
+              I'm a Web Developer, painter, and adventurer. <br>I'm curently studying at Blinn College. 
+              </h1>
       </div>
-
+       <div class="col-sm-6 slideanim">  
+      <img src="images/akil12.png">  
+>>>>>>> origin/gh-pages:demo.html
+      </div>
   </div>    
 </div>
 
@@ -277,20 +304,6 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-<script>
-  $(window).scroll(function () {
-    $('.codeconSkills').each(function () {
-        var imagePos = $(this).offset().top;
-        var imageHeight = $(this).height();
-        var topOfWindow = $(window).scrollTop();
 
-        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-            $(this).addClass("slideRight");
-        } else {
-            $(this).removeClass("slideRight");
-        }
-    });
-});
-</script>
 </body>
 </html> 
