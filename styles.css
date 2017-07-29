@@ -1,0 +1,634 @@
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+  background-image: url(images/profile.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  min-height: 650px;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* nav style */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 220px;
+    background-color: rgba(0, 0, 0, 0.9);
+
+
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,1)); 
+
+}
+
+.sidenav a {
+    padding: 18px;
+    text-decoration: none;
+    font-size: 2.0em;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-style: bold;
+    text-align: center;
+}
+
+.sidenav .nav a:hover {
+    color: red;
+    font-size: 3.1em;
+    font-weight: bold;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding: 1px;
+    margin-bottom: 20px;
+    font-size: 3.9em;
+    padding-top: 7px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.closebtn:hover {
+  color: red;
+  -ms-transform: rotate(47deg); 
+    -webkit-transform: rotate(47deg); 
+    transform: rotate(47deg);
+}
+
+.topnav {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    opacity: none;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.topnav h2 {
+  font-family: 'Freckle Face', cursive;
+  position: absolute;
+  color: red;
+  padding: 10px 0 0 25px;
+  font-size: 2.6em;
+}
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+.topnav img {
+  width: 65px;
+  height: 55px;
+  float: right;
+  margin-right: 9%;
+}
+.topnav span {
+    margin-left: 3%;
+    padding: 10px;
+    float: left;
+  }
+
+.logo {
+    float: left;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+
+/* profile style */
+
+
+#profile h1 {
+  color: white;
+  letter-spacing: 7px;
+  padding-top: 250px;
+}
+
+#profile a {
+ text-decoration: none;
+ color: white;
+}
+#profile a:hover{
+  color: red;
+}
+#about{
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  color: black;
+
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)); 
+
+}
+.about-info {
+  margin-top: 10%;
+  margin-left: 5%;
+  color: white;
+  height: 700px;
+  font-family: 'Fontdiner-Swanky', cursive;
+
+}
+.about-info button:hover{
+  background-color: #333;
+
+}
+.about-info button {
+  background-color: #333;
+}
+.about-info button a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+.about-info button a:visited, a:link{
+  text-decoration: none; 
+  }
+
+#about h1 {
+    font-size: 2.3em;
+    font-weight: bolder;
+    letter-spacing: 7px;
+    padding-top: 5%;
+}
+#about p {
+    font-size: 1.3em;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+#about img {
+  width: 60%;
+  height: 75%;
+  margin-right: 10%;
+  margin-top: 10%;
+  float: right;
+}
+ .social-media {
+  color: black;
+  padding-left: 25%;
+}
+#about .social-media img {
+  border-radius: 1px;
+  width: 60px;
+  height: 50px;
+  padding-top: 400px;
+  margin-left: 2%;
+  padding: 0.9%;
+  float: left;
+}
+strong {
+  color: red;
+}
+
+.about h2 {
+  font-size: 2.0em;
+}
+.about  h3{
+  font-size: 1.4em;
+}
+
+/* portfoli0 style */
+#portfolio {
+ background-image: url(images/portfolio.jpg);
+ background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  min-height: 650px;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+#portfolio h1 {
+  color: white;
+  letter-spacing: 7px;
+  padding-top: 22%; 
+  padding-bottom: 22%; 
+  font-weight: bolder;
+}
+#portfolio-info h2 {
+    font-size: 2.4em;
+}
+
+#portfolio-info {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+}
+ 
+#skills {
+  background-color: white;
+  height: auto;
+}
+.skills h2 {
+  padding-top: 10%;
+  font-size: 5.5em;
+}
+
+ #myProgress {
+  
+  width: 80%;
+  margin-left: 10%;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+#myBarHtml {
+  
+  width: 80%;
+  height: 100%;
+  background-color: #737373;
+  border-radius: 4px;
+}
+#myBarCss {
+ 
+  width: 70%;
+  height: 100%;
+  background-color: #737373;
+  border-radius: 4px;
+}
+#myBarJavascript {
+
+  width: 40%;
+  height: 100%;
+  background-color: #737373;
+  border-radius: 4px;
+}
+#myBarPython {
+
+  width: 30%;
+  height: 100%;
+  background-color: #737373;
+  border-radius: 4px;
+}
+#myBarPHP {
+ 
+  width: 46%;
+  height: 100%;
+  background-color: #737373;
+  border-radius: 4px;
+}
+#myBarMySQL {
+  
+  width: 18%;
+  height: 100%;
+  background-color: #737373;
+  border-radius: 4px;
+}
+
+.percentage {
+  margin: 5px;
+  float: right;
+  padding-right: 10px;
+}
+
+.barName {
+  margin: 5px;
+  font-size: 1.7em;
+  font-size: bold;
+  letter-spacing: 7px;
+  padding-left: 10px;
+}
+
+/* porject */
+#projects {
+  background-image: url(images/project1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  min-height: 650px;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#projects h1 {
+  color: white;
+  letter-spacing: 7px;
+  padding-top: 22%; 
+  padding-bottom: 22%;  
+  font-weight: bolder;
+}
+
+#project-info {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: auto;
+    
+}
+#project-info h2 {
+    padding: 10%;
+}
+
+/* project style and effects */
+
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  cursor: default;
+padding-left: 5%;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  height: 200px;
+  width: 320px;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
+.container-fluid {
+    padding: 60px 50px;
+    height: auto;
+}
+
+.item span {
+    font-style: normal;
+}
+
+img {
+    width: 100%;
+    height: 100%; 
+    margin-bottom: 10px;
+  }
+
+
+
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;  
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    visibility: visible;      
+}
+      @keyframes slide {
+      0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+      } 
+      100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+      } 
+      }
+      @-webkit-keyframes slide {
+      0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+      } 
+      100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+      }
+      }
+      @media screen and (max-width: 768px) {
+      .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+      }
+      .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+      }
+      }
+      @media screen and (max-width: 480px) {
+      .logo {
+      font-size: 150px;
+      }
+      }
+
+      @media only screen and (max-width: 320px) {
+
+      body { font-size: 2em; }
+
+      }
+      @media only screen and (min-width: 767px) {
+
+      h1 {
+      font-size: 4.3em;
+      }
+
+      h2 {
+      font-size: 2em;
+      }
+      p {
+      font-size: 1em;
+      }
+
+      }
+      html{font-size:100%;} 
+      @media(min-width:60em){html{font-size: 100%}}
+
+
+.textcenter {
+    text-align: center;
+}
+
+#contact {
+  background-image: url(images/contact.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  min-height: 650px;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px; 
+}
+#contact h1 {
+  color: white;
+  letter-spacing: 7px;
+  padding-top: 22%; 
+  padding-bottom: 22%;
+  font-weight: bolder; 
+}
+#contact-info {
+    background-color: #cccccc;
+    color: black;
+    width: 100%;
+    height: auto;
+}
+
+#contact-info .map {
+    padding-top: 7%;
+}
+#contact-info h2 {
+  padding: 2%;
+}
+
+.form-info {
+  padding-top: 5%;
+}
+.form-info button {
+  background-color: #666;
+  color: #fff;
+}
+
+/* footer style */
+footer {
+    background-color: #eee;
+} 
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+footer .footer_link img {
+  border-radius: 1px;
+  width: 90px;
+  height: 90px;
+  padding-top: 40px;
+  padding: 0.6%;
+  float: none;
+}
+#map-canvas {
+  width:100%;
+    height: 100%;
+  height:calc(100% - 0px);
+}
+
